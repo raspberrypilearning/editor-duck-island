@@ -11,4 +11,4 @@
 
 Both code projects use `type: code_editor_scratch` and `build: true`.
 
-The tutorial and code are generated together by `conversion/build.py`. Make substantive changes there, regenerate, and validate; direct generated file edits will otherwise be overwritten.
+The tutorial and code are generated together by `en/conversion/build.py`. Make substantive changes there, regenerate, and validate; direct generated file edits will otherwise be overwritten.

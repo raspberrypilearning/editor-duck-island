@@ -9,7 +9,7 @@ A Scratch duck-rescue game for the Raspberry Pi Code Editor: 31 short making ste
 - [Starter](en/code/editor-duck-island-starter/editor-duck-island-starter.sb3)
 - [Completed core game](en/code/editor-duck-island-complete/editor-duck-island-complete.sb3)
 - [Example with optional extensions](en/solutions/editor-duck-island-with-challenges.sb3)
-- [Conversion decisions, source mapping, and validation](conversion/README.md)
+- [Conversion decisions, source mapping, and validation](en/conversion/README.md)
 
 The conversion uses `raspberrypilearning/duck-island` **draft** commit `375d8bf` and the supplied Scratch starter. The packaged starter's only sprite is named **player** and has no scripts.
 

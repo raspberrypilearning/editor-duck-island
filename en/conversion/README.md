@@ -13,6 +13,10 @@ result, and completion milestone. Each original section is covered.
 
 ## Rules applied
 
+Keep conversion tooling and reports under `en/conversion`. Do not add new
+directories at the repository root; the publishing pipeline expects the
+established root layout.
+
 One page has one editing target (a sprite or Stage), one outcome, and a check
 that works with the project built so far. A complete behaviour can need several
 scripts. Empty conditions and uncalled custom blocks are not separate steps.
@@ -59,8 +63,8 @@ supplied starter. Learner screenshots and the banner come from the source.
 From the repository root:
 
 ```sh
-python3 conversion/build.py
-python3 conversion/check_structure.py
+python3 en/conversion/build.py
+python3 en/conversion/check_structure.py
 ```
 
 `scratch_builder.py` serialises the supported Scratch blocks. `build.py`
@@ -90,7 +94,7 @@ npm install --prefix /private/tmp/duck-island-tools \
   /private/tmp/duck-island-tools/node_modules/scratch-audio/dist.js \
   --bundle --platform=browser --format=iife --global-name=ScratchAudio \
   --outfile=/private/tmp/duck-island-tools/audio.js
-node conversion/validate.cjs
+node en/conversion/validate.cjs
 ```
 
 The harness defaults to macOS Google Chrome. Override `DUCK_TEST_BROWSER` for a

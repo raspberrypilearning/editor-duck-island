@@ -4,9 +4,9 @@ from pathlib import Path
 import re
 import zipfile
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 EN = ROOT / "en"
-manifest = json.loads((ROOT / "conversion/manifest.json").read_text())
+manifest = json.loads((ROOT / "en/conversion/manifest.json").read_text())
 pages = manifest["pages"]
 assert [p["step"] for p in pages] == list(range(1, len(pages) + 1))
 assert len(list(EN.glob("step_*.md"))) == len(pages)
