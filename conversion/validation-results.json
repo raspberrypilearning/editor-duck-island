@@ -1,0 +1,137 @@
+{
+  "checks": [
+    {
+      "step": 1,
+      "passed": true
+    },
+    {
+      "step": 2,
+      "passed": true
+    },
+    {
+      "step": 3,
+      "passed": true
+    },
+    {
+      "step": 4,
+      "passed": true
+    },
+    {
+      "step": 5,
+      "passed": true
+    },
+    {
+      "step": 6,
+      "passed": true
+    },
+    {
+      "step": 7,
+      "passed": true
+    },
+    {
+      "step": 8,
+      "passed": true
+    },
+    {
+      "step": 9,
+      "passed": true
+    },
+    {
+      "step": 10,
+      "passed": true
+    },
+    {
+      "step": 11,
+      "passed": true
+    },
+    {
+      "step": 12,
+      "passed": true
+    },
+    {
+      "step": 13,
+      "passed": true
+    },
+    {
+      "step": 14,
+      "passed": true
+    },
+    {
+      "step": 15,
+      "passed": true
+    },
+    {
+      "step": 16,
+      "passed": true
+    },
+    {
+      "step": 17,
+      "passed": true
+    },
+    {
+      "step": 18,
+      "passed": true
+    },
+    {
+      "step": 19,
+      "passed": true
+    },
+    {
+      "step": 20,
+      "passed": true
+    },
+    {
+      "step": 21,
+      "passed": true
+    },
+    {
+      "step": 22,
+      "passed": true
+    },
+    {
+      "step": 23,
+      "passed": true
+    },
+    {
+      "step": 24,
+      "passed": true
+    },
+    {
+      "step": 25,
+      "passed": true
+    },
+    {
+      "step": 26,
+      "passed": true
+    },
+    {
+      "step": 27,
+      "passed": true
+    },
+    {
+      "step": 28,
+      "passed": true
+    },
+    {
+      "step": 29,
+      "passed": true
+    },
+    {
+      "step": 30,
+      "passed": true
+    },
+    {
+      "step": 31,
+      "passed": true
+    },
+    {
+      "extension": "score, lives, sign, restart",
+      "passed": true
+    },
+    {
+      "blockDiagrams": 39,
+      "passed": true
+    }
+  ],
+  "errors": []
+}

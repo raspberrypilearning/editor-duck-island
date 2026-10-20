@@ -1,0 +1,464 @@
+{
+  "source_repository": "https://github.com/raspberrypilearning/duck-island",
+  "source_branch": "draft",
+  "source_commit": "375d8bf",
+  "core_steps": 31,
+  "starter": "User-supplied Duck island - starter.sb3; only sprite name normalised to player",
+  "pages": [
+    {
+      "step": 1,
+      "title": "Place your duck",
+      "target": "player",
+      "source": "step_2",
+      "requires": [],
+      "test": "Click the green flag. The duck faces down at the centre of the Stage. Drag it somewhere else, then click the flag again: it returns to the centre.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 2,
+      "title": "Turn right",
+      "target": "player",
+      "source": "step_2",
+      "requires": [
+        1
+      ],
+      "test": "Click the flag, then press the right arrow. The duck turns right. It stays in the centre; later, the scenery will move around it.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 3,
+      "title": "Turn in every direction",
+      "target": "player",
+      "source": "step_2",
+      "requires": [
+        2
+      ],
+      "test": "Press each arrow key separately. The duck faces right, left, down, and up when you press the matching key.",
+      "challenge": false,
+      "milestone": "engaged"
+    },
+    {
+      "step": 4,
+      "title": "Bob on the water",
+      "target": "player",
+      "source": "step_3",
+      "requires": [
+        3
+      ],
+      "test": "Click the flag and leave the keys alone. The duck gently bobs up and down without drifting away.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 5,
+      "title": "Bob faster when swimming",
+      "target": "player",
+      "source": "step_3",
+      "requires": [
+        4
+      ],
+      "test": "Hold an arrow key: the duck bobs faster. Release it: the gentle bob returns. Press space: the gentle bob should continue.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 6,
+      "title": "Draw a wave",
+      "target": "wave",
+      "source": "step_4",
+      "requires": [
+        5
+      ],
+      "test": "Select the wave. You should see a white ring with water visible through its middle. Adjust the oval in the paint editor if it is much larger than the duck.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 7,
+      "title": "Put the wave under the duck",
+      "target": "wave",
+      "source": "step_4",
+      "requires": [
+        6
+      ],
+      "test": "Click the flag. The ring sits around the duck's base. Move the wave elsewhere and restart: it returns underneath the duck.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 8,
+      "title": "Make the wave bob",
+      "target": "wave",
+      "source": "step_4",
+      "requires": [
+        7
+      ],
+      "test": "Click the flag and leave the keys alone. The wave and duck bob in opposite directions.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 9,
+      "title": "Make three wave costumes",
+      "target": "wave",
+      "source": "step_4",
+      "requires": [
+        8
+      ],
+      "test": "Stop the project. Click each costume thumbnail. The ring should grow in three steps while its centre stays in the same place.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 10,
+      "title": "Animate the swimming wave",
+      "target": "wave",
+      "source": "step_4",
+      "requires": [
+        9
+      ],
+      "test": "Click the flag. Hold an arrow: the ring expands repeatedly. Release it: the smallest ring returns and gently bobs. Space should not animate the ring.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 11,
+      "title": "Draw a rock",
+      "target": "obstacle",
+      "source": "step_5",
+      "requires": [
+        10
+      ],
+      "test": "Your rock appears on the Stage. It should be about the duck's width. Use the paint editor to resize the drawing if necessary.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 12,
+      "title": "Make one rock appear",
+      "target": "obstacle",
+      "source": "step_5",
+      "requires": [
+        11
+      ],
+      "test": "Click the flag several times. Each restart shows one rock at a new position. The duck and wave still work.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 13,
+      "title": "Vary the rock sizes",
+      "target": "obstacle",
+      "source": "step_5",
+      "requires": [
+        12
+      ],
+      "test": "Restart several times. The rock changes size as well as position. It should stay between half and all of the size you drew.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 14,
+      "title": "Make rocks while swimming",
+      "target": "obstacle",
+      "source": "step_5",
+      "requires": [
+        13
+      ],
+      "test": "Restart, then hold an arrow for a few seconds. Several rocks appear with gaps between them. Release the key: no new rocks should appear. Pressing space alone should not create rocks.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 15,
+      "title": "Start rocks at the side edges",
+      "target": "obstacle",
+      "source": "step_6",
+      "requires": [
+        14
+      ],
+      "test": "Restart and hold right: new rocks appear at the right edge. Restart and hold left: they appear at the left edge. They stay there for now.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 16,
+      "title": "Start rocks at the top and bottom",
+      "target": "obstacle",
+      "source": "step_6",
+      "requires": [
+        15
+      ],
+      "test": "Restart and hold up: rocks appear near the top. Restart and hold down: they appear near the bottom. Test one arrow key at a time.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 17,
+      "title": "Move rocks sideways",
+      "target": "obstacle",
+      "source": "step_7",
+      "requires": [
+        16
+      ],
+      "test": "Restart and hold right. Rocks travel left across the water. Hold left: they travel right. Release the key: they stop.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 18,
+      "title": "Move rocks up and down",
+      "target": "obstacle",
+      "source": "step_7",
+      "requires": [
+        17
+      ],
+      "test": "Restart and hold up. Rocks move down. Hold down: they move up. Try all four arrows separately and check that the scenery always moves opposite the duck's direction.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 19,
+      "title": "Clear rocks at the side edges",
+      "target": "obstacle",
+      "source": "step_8",
+      "requires": [
+        18
+      ],
+      "test": "Restart and hold right until rocks cross the Stage. They disappear near the left edge. Restart and hold left to check the opposite edge.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 20,
+      "title": "Clear rocks at every edge",
+      "target": "obstacle",
+      "source": "step_8",
+      "requires": [
+        19
+      ],
+      "test": "Restart and swim up, down, left, and right. Rocks disappear after passing any boundary. Release the keys: rocks still inside the water stay where they are.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 21,
+      "title": "Sense a rock on the right",
+      "target": "player",
+      "source": "step_9",
+      "requires": [
+        20
+      ],
+      "test": "Restart and steer a rock towards the duck from the right. Watch `right blocked`: it changes from `no` to `yes` when the rock is close. Rocks can still pass through for now.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 22,
+      "title": "Sense a rock on the left",
+      "target": "player",
+      "source": "step_9",
+      "requires": [
+        21
+      ],
+      "test": "Restart. Steer a rock towards the duck from the left. `left blocked` changes to `yes` as it approaches, then back to `no` after it passes. The duck should not drift sideways.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 23,
+      "title": "Sense rocks above and below",
+      "target": "player",
+      "source": "step_9",
+      "requires": [
+        22
+      ],
+      "test": "Restart and steer rocks above and below the duck. The matching monitor changes to `yes` when a rock is close. Move away and it returns to `no`; the duck still bobs around the centre.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 24,
+      "title": "Stop at rocks",
+      "target": "obstacle",
+      "source": "step_9",
+      "requires": [
+        23
+      ],
+      "test": "Restart and steer towards a rock. It stops just before reaching the duck. Press the opposite arrow: you can swim away. Test approaches from all four directions.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 25,
+      "title": "Add a lost duck",
+      "target": "collectable",
+      "source": "step_10",
+      "requires": [
+        24
+      ],
+      "test": "Restart and hold an arrow. Small ducks appear among the rocks and travel across the water. They are scenery for now; touching one does not score.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 26,
+      "title": "Show a rescue score",
+      "target": "collectable",
+      "source": "step_10",
+      "requires": [
+        25
+      ],
+      "test": "Click the flag. A score of `0` appears at the top-left. It stays at zero until you add the rescue rule next.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 27,
+      "title": "Rescue a duck",
+      "target": "collectable",
+      "source": "step_10",
+      "requires": [
+        26
+      ],
+      "test": "Restart and swim into a small duck. It disappears and the score increases by exactly `1`. A rock should never award a point.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 28,
+      "title": "Hear each rescue",
+      "target": "collectable",
+      "source": "step_10",
+      "requires": [
+        27
+      ],
+      "test": "Rescue a small duck. You hear a pop as it disappears, and the score still increases by one.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 29,
+      "title": "Add a hook",
+      "target": "hazard",
+      "source": "step_11",
+      "requires": [
+        28
+      ],
+      "test": "Restart. Hooks appear alongside ducks and rocks. Touch a hook: it disappears without increasing the score. Rescue a duck: that still adds one point.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 30,
+      "title": "End the game on a hook",
+      "target": "hazard",
+      "source": "step_11",
+      "requires": [
+        29
+      ],
+      "test": "Restart and touch a hook. You hear a lower pop, then everything stops. The score must not increase for the hook. Click the flag to start a new game.",
+      "challenge": false,
+      "milestone": null
+    },
+    {
+      "step": 31,
+      "title": "Make hooks drift",
+      "target": "hazard",
+      "source": "step_11",
+      "requires": [
+        30
+      ],
+      "test": "Restart and hold an arrow to create hooks. Release it: rocks and small ducks stop, but hooks keep drifting. Hooks that cross a boundary disappear; touching one still ends the game.",
+      "challenge": false,
+      "milestone": "internal"
+    },
+    {
+      "step": 32,
+      "title": "Challenge: vary the rocks",
+      "target": "obstacle",
+      "source": "step_12",
+      "requires": [
+        24
+      ],
+      "test": "Restart and swim for a while. Both kinds of rock appear. Check that both still block the duck and disappear at the edges.",
+      "challenge": true,
+      "milestone": null
+    },
+    {
+      "step": 33,
+      "title": "Challenge: add water sounds",
+      "target": "Stage",
+      "source": "step_12",
+      "requires": [
+        1
+      ],
+      "test": "Restart. Water sounds loop quietly while you play. You can still hear rescues and the hook sound.",
+      "challenge": true,
+      "milestone": null
+    },
+    {
+      "step": 34,
+      "title": "Challenge: remember your best score",
+      "target": "collectable",
+      "source": "step_12",
+      "requires": [
+        28
+      ],
+      "test": "Rescue some ducks, then restart. `score` returns to zero but `high score` keeps your best result. Beat it and watch it increase.",
+      "challenge": true,
+      "milestone": null
+    },
+    {
+      "step": 35,
+      "title": "Challenge: give the duck three lives",
+      "target": "hazard",
+      "source": "step_12",
+      "requires": [
+        30
+      ],
+      "test": "Restart and touch one hook at a time. Lives go from 3 to 2 to 1, and each hook disappears. The third hit stops the game. Restart: lives return to 3.",
+      "challenge": true,
+      "milestone": null
+    },
+    {
+      "step": 36,
+      "title": "Challenge: draw a game-over sign",
+      "target": "game over",
+      "source": "step_12",
+      "requires": [
+        1
+      ],
+      "test": "Click the green flag: the sign hides. Click the `when I receive game over` stack directly in the code area: the sign appears in front of the game. Restart to hide it again.",
+      "challenge": true,
+      "milestone": null
+    },
+    {
+      "step": 37,
+      "title": "Challenge: show the sign at game over",
+      "target": "hazard",
+      "source": "step_12",
+      "requires": [
+        30,
+        36
+      ],
+      "test": "Restart and lose the game. The sign appears before everything stops. Restart again: the sign hides and you can play another round.",
+      "challenge": true,
+      "milestone": null
+    },
+    {
+      "step": 38,
+      "title": "Challenge: tune the movement",
+      "target": "hazard",
+      "source": "step_12",
+      "requires": [
+        31
+      ],
+      "test": "Restart and create a few hooks, then release the arrows. Compare their drift with the earlier speed. Choose a speed that gives you time to dodge. Check that hooks still disappear at the edges.\n\nSave your project.",
+      "challenge": true,
+      "milestone": "external"
+    }
+  ]
+}

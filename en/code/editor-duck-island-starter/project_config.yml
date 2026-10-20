@@ -1,0 +1,4 @@
+name: "Duck island starter"
+identifier: "editor-duck-island-starter"
+type: 'code_editor_scratch'
+build: true

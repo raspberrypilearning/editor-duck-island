@@ -1,45 +1,19 @@
-## What you will make
-OR
-## What you will do - change meta if you use this
+## Place your duck
 
-A brief description - one or two sentences. 
+![player.](images/player-sprite.png){:width="100px" height="100px" style="object-fit: contain;"}
 
---- print-only ---
+The starter project is open beside these instructions. It already contains **player**, your duck, with four direction costumes.
 
-![ALT TEXT](images/IMAGE.png)
+Select **player**. Add this script to put the duck in the middle of the water.
 
---- /print-only ---
+```blocks3
+when green flag clicked
+go to [front v] layer
+switch costume to (down v)
+set size to (25) %
+go to x: (0) y: (0)
+```
 
---- no-print ---
+## Now run your code
 
-[Editor embed](https://editor.raspberrypi.org/en/embed/viewer/project-slug)
-
---- /no-print ---
-
---- no-print ---
-
-Video embed
-
-<video width="640" height="360" controls>
-<source src="images/videoname.mp4" type="video/mp4">
-</video>
-
-Youtube embed 
-<html>
-<div style="position: relative; overflow: hidden; padding-top: 56.25%;">
-<iframe style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/XXXXXXXXX?rel=0&cc_load_policy=1" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-</iframe>
-</div><br>
-</html>
-
-Scratch embed
-<div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/XXXXXXXXX/?autostart=false" frameborder="0"></iframe>
-</div>
-
---- /no-print ---
-
-### You will need:
-- a
-- b
-- c
+Click the green flag. The duck faces down at the centre of the Stage. Drag it somewhere else, then click the flag again: it returns to the centre.
