@@ -10,14 +10,14 @@ forever
         switch costume to (right v)
     end
 +    if <key (left arrow v) pressed?> then
-+        switch costume to (left v)
-+    end
+        switch costume to (left v)
+    end
 +    if <key (down arrow v) pressed?> then
-+        switch costume to (down v)
-+    end
+        switch costume to (down v)
+    end
 +    if <key (up arrow v) pressed?> then
-+        switch costume to (up v)
-+    end
+        switch costume to (up v)
+    end
 end
 ```
 

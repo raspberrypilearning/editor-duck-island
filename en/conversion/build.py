@@ -73,7 +73,24 @@ def code(commands, old=None):
         added = set()
         for tag, _, _, start, end in difflib.SequenceMatcher(a=before, b=after).get_opcodes():
             if tag in ("replace", "insert"): added.update(range(start, end))
-        text = "\n".join(("+" if i in added else "") + line for i, line in enumerate(after))
+        outlined_depth = None
+        highlighted = []
+        for i, line in enumerate(after):
+            stripped = line.lstrip()
+            depth = len(line) - len(stripped)
+            covered = outlined_depth is not None
+            if covered:
+                # A new enclosing block already outlines everything inside it,
+                # including both branches of an if/else.
+                highlighted.append(line)
+                if depth == outlined_depth and stripped == "end":
+                    outlined_depth = None
+                continue
+            changed = i in added and stripped not in ("else", "end")
+            highlighted.append(("+" if changed else "") + line)
+            if changed and (stripped == "forever" or stripped.startswith(("if ", "repeat "))):
+                outlined_depth = depth
+        text = "\n".join(highlighted)
     return "```blocks3\n" + text + "\n```"
 
 

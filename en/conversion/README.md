@@ -22,6 +22,11 @@ that works with the project built so far. A complete behaviour can need several
 scripts. Empty conditions and uncalled custom blocks are not separate steps.
 Artwork steps use visible checks; audio steps include an audible result.
 
+Outline only the outermost newly added block. When a loop or conditional is
+outlined, its contents are implicitly included: do not add nested outlines or
+mark its `else` and `end` lines. Additions inside an existing, unoutlined
+container can still have their own outlines.
+
 Tests may exercise other existing sprites without editing them. Copying a
 costume or duplicating a sprite leaves the source unchanged; subsequent edits
 belong to the new target. Work shared between targets is separated into pages,

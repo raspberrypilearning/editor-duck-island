@@ -8,11 +8,11 @@ On **obstacle**, replace the single `create clone` with a loop. Make a clone onl
 when green flag clicked
 hide
 +forever
-+    if <<<key (right arrow v) pressed?> or <key (left arrow v) pressed?>> or <<key (up arrow v) pressed?> or <key (down arrow v) pressed?>>> then
-+        create clone of (myself v)
-+        wait (pick random (1) to (3)) seconds
-+    end
-+end
+    if <<<key (right arrow v) pressed?> or <key (left arrow v) pressed?>> or <<key (up arrow v) pressed?> or <key (down arrow v) pressed?>>> then
+        create clone of (myself v)
+        wait (pick random (1) to (3)) seconds
+    end
+end
 ```
 
 ## Tip
