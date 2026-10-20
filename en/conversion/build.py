@@ -1,6 +1,6 @@
 """Rebuild the English editor tutorial and matching Scratch checkpoints.
 
-Run from any directory: python3 conversion/build.py
+Run from any directory: python3 en/conversion/build.py
 Intermediate projects are written to /private/tmp/editor-duck-island-checkpoints.
 The supplied starter is kept in en/code; its sprite is normalised to `player`.
 """
@@ -12,7 +12,7 @@ import zipfile
 
 from scratch_builder import blocks, sprite, svg_asset, write_project
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 EN = ROOT / "en"
 CHECKPOINTS = Path("/private/tmp/editor-duck-island-checkpoints")
 STARTER = EN / "code/editor-duck-island-starter/editor-duck-island-starter.sb3"
@@ -525,7 +525,7 @@ manifest = dict(source_repository="https://github.com/raspberrypilearning/duck-i
     source_branch="draft", source_commit="375d8bf", core_steps=CORE_STEPS,
     starter="User-supplied Duck island - starter.sb3; only sprite name normalised to player",
     pages=pages)
-(ROOT / "conversion/manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
+(ROOT / "en/conversion/manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
 meta = [
     "title: Duck island", "hero_image: images/banner.png",
     "description: Make a duck-rescue game in this Code Club arcade project.",

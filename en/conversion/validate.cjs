@@ -1,6 +1,6 @@
 /* Runtime checks in the real Scratch VM, WebGL renderer, and audio engine.
- * Install tools outside the repository (see conversion/README.md).
- * node conversion/validate.cjs
+ * Install tools outside the repository (see en/conversion/README.md).
+ * node en/conversion/validate.cjs
  */
 const fs = require("fs");
 const path = require("path");
@@ -8,7 +8,7 @@ const http = require("http");
 const assert = require("assert/strict");
 const toolRoot = process.env.DUCK_TEST_TOOLS || "/private/tmp/duck-island-tools";
 const {chromium} = require(path.join(toolRoot, "node_modules/playwright"));
-const root = path.resolve(__dirname, "..");
+const root = path.resolve(__dirname, "../..");
 const checkpointRoot = "/private/tmp/editor-duck-island-checkpoints";
 const report = {checks: [], errors: []};
 const library = {
@@ -226,11 +226,11 @@ const checks = {
      await spawn(n,x,y);
    drawMonitors();
   });
-  await page.screenshot({path:path.join(root,"conversion/runtime-preview.png")});
+  await page.screenshot({path:path.join(__dirname,"runtime-preview.png")});
  }catch(e){report.errors.push(String(e));console.error(e)}
  finally{
   await browser.close();server.close();
-  fs.writeFileSync(path.join(root,"conversion/validation-results.json"),JSON.stringify(report,null,2)+"\n");
+  fs.writeFileSync(path.join(__dirname,"validation-results.json"),JSON.stringify(report,null,2)+"\n");
  }
  if(report.errors.length||report.checks.some(c=>!c.passed))process.exitCode=1;
 })();
