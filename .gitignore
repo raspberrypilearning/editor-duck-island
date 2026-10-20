@@ -10,3 +10,6 @@ env/
 ### MacOS ###
 .DS_STORE
 .DS_Store
+._*
+__pycache__/
+*.pyc

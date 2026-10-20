@@ -1,14 +1,58 @@
-title: Project title in sentence case
+title: Duck island
 hero_image: images/banner.png
-description: A short description of the project
+description: Make a duck-rescue game in this Code Club arcade project.
 listed: false
 pdf: false
+landing: true
 steps:
-  - title: What you will make
-  - title: Step title
+  - title: "Place your duck"
+  - title: "Turn right"
+  - title: "Turn in every direction"
     completion:
-      - engaged      
-  - title: Challenge
+      - engaged
+  - title: "Bob on the water"
+  - title: "Bob faster when swimming"
+  - title: "Draw a wave"
+  - title: "Put the wave under the duck"
+  - title: "Make the wave bob"
+  - title: "Make three wave costumes"
+  - title: "Animate the swimming wave"
+  - title: "Draw a rock"
+  - title: "Make one rock appear"
+  - title: "Vary the rock sizes"
+  - title: "Make rocks while swimming"
+  - title: "Start rocks at the side edges"
+  - title: "Start rocks at the top and bottom"
+  - title: "Move rocks sideways"
+  - title: "Move rocks up and down"
+  - title: "Clear rocks at the side edges"
+  - title: "Clear rocks at every edge"
+  - title: "Sense a rock on the right"
+  - title: "Sense a rock on the left"
+  - title: "Sense rocks above and below"
+  - title: "Stop at rocks"
+  - title: "Add a lost duck"
+  - title: "Show a rescue score"
+  - title: "Rescue a duck"
+  - title: "Hear each rescue"
+  - title: "Add a hook"
+  - title: "End the game on a hook"
+  - title: "Make hooks drift"
+    completion:
+      - internal
+  - title: "Challenge: vary the rocks"
+    challenge: true
+  - title: "Challenge: add water sounds"
+    challenge: true
+  - title: "Challenge: remember your best score"
+    challenge: true
+  - title: "Challenge: give the duck three lives"
+    challenge: true
+  - title: "Challenge: draw a game-over sign"
+    challenge: true
+  - title: "Challenge: show the sign at game over"
+    challenge: true
+  - title: "Challenge: tune the movement"
     challenge: true
     completion:
       - external

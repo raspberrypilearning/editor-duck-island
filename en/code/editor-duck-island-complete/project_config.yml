@@ -1,0 +1,4 @@
+name: "Duck island completed"
+identifier: "editor-duck-island-complete"
+type: 'code_editor_scratch'
+build: true
