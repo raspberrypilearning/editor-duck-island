@@ -10,11 +10,11 @@ go to [back v] layer
 switch costume to (costume1 v)
 go to x: (0) y: (-20)
 +forever
-+    change y by (-1)
-+    wait (0.3) seconds
-+    change y by (1)
-+    wait (0.3) seconds
-+end
+    change y by (-1)
+    wait (0.3) seconds
+    change y by (1)
+    wait (0.3) seconds
+end
 ```
 
 ## Now run your code

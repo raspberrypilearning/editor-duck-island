@@ -10,11 +10,11 @@ go to x: (pick random (-200) to (200)) y: (pick random (-140) to (140))
 set size to (pick random (50) to (100)) %
 show
 +if <key (right arrow v) pressed?> then
-+    set x to (220)
-+end
+    set x to (220)
+end
 +if <key (left arrow v) pressed?> then
-+    set x to (-220)
-+end
+    set x to (-220)
+end
 ```
 
 ## Now run your code

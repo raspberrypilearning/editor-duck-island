@@ -10,16 +10,16 @@ Join four `key pressed?` blocks using three `or` blocks. Check **only the arrow 
 when green flag clicked
 forever
 +    if <<<key (right arrow v) pressed?> or <key (left arrow v) pressed?>> or <<key (up arrow v) pressed?> or <key (down arrow v) pressed?>>> then
-+        change y by (3)
-+        wait (0.1) seconds
-+        change y by (-3)
-+        wait (0.1) seconds
-+    else
-+        change y by (1)
-+        wait (0.3) seconds
-+        change y by (-1)
-+        wait (0.3) seconds
-+    end
+        change y by (3)
+        wait (0.1) seconds
+        change y by (-3)
+        wait (0.1) seconds
+    else
+        change y by (1)
+        wait (0.3) seconds
+        change y by (-1)
+        wait (0.3) seconds
+    end
 end
 ```
 

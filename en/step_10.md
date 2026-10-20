@@ -11,15 +11,15 @@ switch costume to (costume1 v)
 go to x: (0) y: (-20)
 forever
 +    if <<<key (right arrow v) pressed?> or <key (left arrow v) pressed?>> or <<key (up arrow v) pressed?> or <key (down arrow v) pressed?>>> then
-+        next costume
-+        wait (0.1) seconds
-+    else
-+        switch costume to (costume1 v)
-+        change y by (-1)
-+        wait (0.3) seconds
-+        change y by (1)
-+        wait (0.3) seconds
-+    end
+        next costume
+        wait (0.1) seconds
+    else
+        switch costume to (costume1 v)
+        change y by (-1)
+        wait (0.3) seconds
+        change y by (1)
+        wait (0.3) seconds
+    end
 end
 ```
 

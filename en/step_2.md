@@ -11,10 +11,10 @@ switch costume to (down v)
 set size to (25) %
 go to x: (0) y: (0)
 +forever
-+    if <key (right arrow v) pressed?> then
-+        switch costume to (right v)
-+    end
-+end
+    if <key (right arrow v) pressed?> then
+        switch costume to (right v)
+    end
+end
 ```
 
 ## Now run your code
